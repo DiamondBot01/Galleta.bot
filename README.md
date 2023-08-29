@@ -8,8 +8,9 @@
 </p>
 <div align="center">
     <img
-            src="https://readme-typing-svg.herokuapp.com?font=ShadowsIntoLightsize=50&duration=5500&color=fc7b03&background=FF673200&center=true&vCenter=true&lines=Welcome,+A+Galleta-bot;Welcome+to+my+GitHub"
+            src="https://readme-typing-svg.herokuapp.com?font=ShadowsIntoLightsize=50&duration=5500&color=fc7b03&background=FF673200&center=true&vCenter=true&lines=Welcome,+A+Galleta-bot"
                                     alt="Typing SVG"
       />
           </a>
+          
                       
