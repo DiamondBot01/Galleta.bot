@@ -12,5 +12,4 @@
                                     alt="Typing SVG"
       />
           </a>
-                      </p>
-  </div>
+                      
