@@ -6,3 +6,11 @@
 <p align="center">
 <a href="#"><img title="𝑮𝒂𝒍𝒍𝒆𝒕𝒂.𝒃𝒐𝒕" src="https://img.shields.io/badge/𝑮𝒂𝒍𝒍𝒆𝒕𝒂.𝒃𝒐𝒕 🍪 | 🦭-black?colorA=%23ff0000&colorB=%23000000&style=for-the-badge"></a>
 </p>
+<div align="center">
+    <img
+            src="https://readme-typing-svg.herokuapp.com?font=ShadowsIntoLightsize=50&duration=5500&color=fc7b03&background=FF673200&center=true&vCenter=true&lines=Welcome,+A+Galleta-bot;Welcome+to+my+GitHub"
+                                    alt="Typing SVG"
+      />
+          </a>
+                      </p>
+  </div>
