@@ -56,12 +56,41 @@ const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const config = JSON.parse(fs.readFileSync("./config.json"))
 const owner = config.owner 
 const mods = config.mods
-const mods = config.mods
 var public = config.public
 conn.connect()
+let _level = JSON.parse(fs.readFileSync('./src/level.json'))
+const _registered = JSON.parse(fs.readFileSync('./src/registered.json'))
+const daily = JSON.parse(fs.readFileSync('./src/diario.json'));
+const dailiy = JSON.parse(fs.readFileSync('./src/limitem.json'));
+const X = "❌️"
+const O = "⭕️"
+
+//========= Funcion de Registro =========\\
+const getRegisteredRandomId = () => {
+           return _registered[Math.floor(Math.random() * _registered.length)].id
+}
+const addRegisteredUser = (userid, sender, age, time, serials) => {
+const obj = { id: userid, name: sender, age: age, time: time, serial: serials }
+        _registered.push(obj)
+        fs.writeFileSync('./src/registered.json', JSON.stringify(_registered))
+}
+
+        const createSerial = (size) => {
+                   return crypto.randomBytes(size).toString('hex').slice(0, size)
+   }
+
+        const checkRegisteredUser = (sender) => {
+                   let status = false
+                   Object.keys(_registered).forEach((i) => {
+                              if (_registered[i].id === sender) {
+                                         status = true
+                                                    }
+                              })
+                       return status
+           
+           
+   
 
 
 
-
-
-
+   
