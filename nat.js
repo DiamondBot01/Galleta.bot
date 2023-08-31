@@ -126,3 +126,27 @@ console.log("Galleta-Bot funciona correctamente!!!")
 }
 })
 //*******************************************//
+
+anita.ev.on('messages.upsert', async (m) => {
+function getGroupAdmins(participants) {
+admins = []
+for (let i of participants) {
+if(i.admin == 'admin') admins.push(i.id)
+if(i.admin == 'superadmin') admins.push(i.id)
+}
+return admins
+}
+  try {
+const getRandom = (ext) => {
+	return `${Math.floor(Math.random() * 10000)}${ext}`
+}
+const getExtension = async (type) => {
+return await mimetype.extension(type)
+ }
+const getBuffer = (url, options) => new Promise(async (resolve, reject) => { 
+options ? options : {}
+await axios({method: "get", url, headers: {"DNT": 1, "Upgrade-Insecure-Request": 1}, ...options, responseType: "arraybuffer"}).then((res) => {
+resolve(res.data)
+}).catch(reject)
+})
+  
